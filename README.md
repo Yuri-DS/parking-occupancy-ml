@@ -25,6 +25,7 @@
 - `learning_SVM_HOG.py` — бейзлайн: SVM + HOG
 - `learning_log_loss.py` — логистическая регрессия
 - `split_dataset.py` — train/test split
+- `AutoParking_YOLO.ipynb` — дообучение и инференс модели YOLOv8
 
 
 ## Данные
@@ -38,7 +39,7 @@
 ## Используемые технологии
 
 - Python 3.10
-- OpenCV, NumPy, scikit-learn, Matplotlib
+- OpenCV, YOLOv8, NumPy, scikit-learn, Matplotlib
 - Jupyter Notebook
 - Сегментация, классификация, SVM, HOG
 
