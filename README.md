@@ -19,13 +19,20 @@
 ## Структура проекта
 
 - `Ml project.ipynb` — основной ноутбук с пайплайном
-- `create_parking_dataset.py` — подготовка датасета
-- `create_json_sample.py` — создание примеров аннотаций
-- `create_mask.py` — генерация масок
-- `learning_SVM_HOG.py` — бейзлайн: SVM + HOG
+- `create_parking_dataset.py` — скрипт подготовки датасета
+- `create_json_sample.py` — генерация примеров аннотаций
+- `create_mask.py` — создание масок для изображений
+- `learning_SVM_HOG.py` — бейзлайн на основе SVM + HOG
 - `learning_log_loss.py` — логистическая регрессия
-- `split_dataset.py` — train/test split
-- `AutoParking_YOLO.ipynb` — дообучение и инференс модели YOLOv8
+- `split_dataset.py` — разделение датасета на train/test
+- `inference.py` — скрипт инференса: предсказание занятости по кадрам (YOLO и CNN)
+- `models_arch.py` — архитектуры моделей: `SmallCNN`, `BetterCNNWithResiduals`
+- `video_processor.py` — обработка видео: применение модели, визуализация, генерация выходного видео
+- `main.ipynb` — финальный ноутбук с полной цепочкой обработки
+- `config3.yaml` — конфигурационный файл с параметрами запуска
+- `bmodel3_complete.pth` — обученная модель CNN
+- `best.pt` — весы модели YOLOv8
+- `input.mp4` — входное видео для обработки
 
 
 ## Данные
